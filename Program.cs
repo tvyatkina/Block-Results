@@ -1,6 +1,7 @@
 ﻿Console.WriteLine("Введите массив строк через пробел:");
 string? a = Console.ReadLine();
 string[] array1 = a!.Split(' ');
+string[] array2 = new string[array1.Length];
 
 void Array2WithIF(string[] array1, string[] array2)
 {
@@ -23,3 +24,6 @@ void PrintArray(string[] array)
     }
     Console.WriteLine();
 }
+
+Array2WithIF(array1, array2);
+PrintArray(array2);
